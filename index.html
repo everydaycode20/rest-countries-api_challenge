@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST Countries API</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/634f493a19.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- REST Countries API with color theme switcher -->
+    <main class="main-container">
+        <nav class="navbar">
+            <h1>Where in the world?</h1>
+            <h1 class="dark-mode"><i class="far fa-moon"></i> Dark Mode</h1>
+        </nav>
+
+        <div class="icon-wrapper">
+            <img src="./images/loading_world_W.gif" alt="loading-icon" class="loading-icon">
+        </div>
+
+        <div class="middle-container">
+            <div class="form">
+                <div class="input-wrapper">
+                    <span class="fas fa-search search-icon"></span>
+                    <input type="text" placeholder="Search for a country..." class="input">
+                </div>
+                
+                <section id="filter" class="filter">
+                    <button class="btn-filter" type="button">Filter by Region<i class="fas fa-chevron-down arrow"></i></button>
+                    <div class="dropdown" id="dropdown">
+                        <p class="Africa">Africa</p>
+                        <p class="America">America</p>
+                        <p class="Asia">Asia</p>
+                        <p class="Europe">Europe</p>
+                        <p class="Oceania">Oceania</p>
+                        <p class="All">All</p>
+                    </div>
+                </section>
+            </div>
+
+            <section class="container-countries" id="container-countries">
+            </section>
+
+            <section class="detailed-page">
+                <div class="btn-container">
+                    <button class="btn-detailed" type="button"><i class="fas fa-arrow-left"></i> Back</button>
+                </div>
+                <div class="info-page">
+                    
+                    <img src="" alt="country-image" id="image-country-detailed" class="image-country-detailed">
+                    <div class="info-country-detailed">
+                        <div class="part1">
+                            <p>Country</p>
+                            <p>Native Name: <span></span></p>
+                            <p>Region: <span></span></p>
+                            <p>Sub Region: <span></span></p>
+                            <p>Sub Capital: <span></span></p>
+                        </div>
+                        <div class="other-info">
+                            <p>Top Level Domain: <span></span></p>
+                            <p>Currencies: <span></span></p>
+                            <p>Languages: <span></span></p>
+                        </div>
+                        <div class="border-countries">
+                            <p class="title-border">Border Countries:</p>
+                            <div class="list-border-countries">
+                                
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="top">
+            <button type="button" class="btn-top" aria-label="To top button"><i class="fas fa-arrow-up"></i></button>
+        </div>
+    </main>
+    
+</body>
+<script src="./script.js"></script>
+</html>
